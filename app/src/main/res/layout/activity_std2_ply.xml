@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Std2PlyActivity"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitleTopS2p"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="63dp"
+        android:text="@string/standard"
+        android:background="@color/lightblue"
+        android:textSize="25dp"
+        android:textColor="@color/brown"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewBlankTop"
+        android:layout_width="match_parent"
+        android:layout_height="104dp" />
+
+    <LinearLayout
+        android:id="@+id/st_2Pl_P1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:orientation="horizontal"
+        android:rotation="180"
+        >
+        <!--android:rotation="180" within the layout that needs to be rotated -->
+
+        <TextView
+            android:id="@+id/st_2pl_p1_Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/wubrg"
+            android:gravity="center"
+            android:onClick="playerName"
+            android:text="Player 1" />
+
+        <Button
+            android:id="@+id/st_2pl_p1_button_minus"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="incrementDecrement"
+            android:text="-"
+            android:textColor="@color/lightblue"
+            android:textSize="30dp"
+            app:backgroundTint="@color/brown" />
+
+        <TextView
+            android:id="@+id/st_2pl_p1_text_life"
+            android:layout_width="116dp"
+            android:layout_height="143dp"
+            android:gravity="center"
+            android:text="20"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/st_2pl_p1_button_plus"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:onClick="incrementDecrement"
+            android:text="+"
+            android:textSize="30dp"
+            android:textColor="@color/lightblue"
+            app:backgroundTint="@color/brown"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewBlankMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="@color/lightblue"/>
+
+    <LinearLayout
+        android:id="@+id/st_2Pl_P2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/st_2Pl_P2_Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/wubrg"
+            android:gravity="center"
+            android:onClick="playerName"
+            android:text="Player 2"
+             />
+
+        <Button
+            android:id="@+id/st_2Pl_P2_button_minus"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="incrementDecrement"
+            android:text="-"
+            android:textColor="@color/lightblue"
+            android:textSize="30dp"
+            app:backgroundTint="@color/brown" />
+
+        <TextView
+            android:id="@+id/st_2pl_p2_text_life"
+            android:layout_width="116dp"
+            android:layout_height="143dp"
+            android:gravity="center"
+            android:text="20"
+
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/st_2Pl_P2_button_plus"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:onClick="incrementDecrement"
+            android:text="+"
+            android:textColor="@color/lightblue"
+            android:textSize="30dp"
+            app:backgroundTint="@color/brown" />
+    </LinearLayout>
+</LinearLayout>

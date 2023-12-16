@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wholepage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Com2PlyActivity">
+
+
+    <LinearLayout
+        android:id="@+id/com_4p_row1_p1"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="horizontal"
+        android:rotation="180"
+        >
+
+        <LinearLayout
+            android:id="@+id/com_4p_p1_minus_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p1_blank_space_above_minus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p1_minus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:paddingHorizontal="0dp"
+                android:text="-"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+
+            <TextView
+                android:id="@+id/com_4p_p1_blank_space_above_minus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p1_minus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="0dp"
+                android:onClick="incrementDecrementTax"
+                android:text="-"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p1_col3texts"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/com_4p_p1_life_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p1_life_total40"
+                android:layout_width="116dp"
+                android:layout_height="67dp"
+                android:gravity="center"
+                android:text="40"
+
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p1_tax_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p1_tax_start0"
+                android:layout_width="116dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="0"
+
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p1_col4_plus"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p1_blank_space_above_plus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p1_plus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:paddingHorizontal="0dp"
+                android:text="+"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+
+
+            <TextView
+                android:id="@+id/com_4p_p1_blank_space_above_plus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p1_plus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="0dp"
+                android:onClick="incrementDecrementTax"
+                android:text="+"
+                android:textSize="30dp"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/com_4p_p1_name"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/red"
+            android:gravity="center"
+            android:onClick="playerName"
+            android:text="Player 1"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/com_4p_blank_middle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue"/>
+
+    <LinearLayout
+        android:id="@+id/com_4p_row1_p2"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="horizontal"
+        android:rotation="180"
+        >
+
+        <TextView
+            android:id="@+id/com_4p_p2_name"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/green"
+            android:gravity="center"
+            android:onClick="playerName"
+            android:text="Player 2"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p2_minus_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p2_blank_space_above_minus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p2_minus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:paddingHorizontal="0dp"
+                android:text="-"
+                android:textSize="30dp"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+
+            <TextView
+                android:id="@+id/com_4p_p2_blank_space_above_minus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p2_minus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="0dp"
+                android:text="-"
+                android:textSize="30dp"
+                android:onClick="incrementDecrementTax"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p2_col3texts"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p2_life_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p2_life_total40"
+                android:layout_width="116dp"
+                android:layout_height="67dp"
+                android:gravity="center"
+                android:text="40"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p2_tax_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p2_tax_start0"
+                android:layout_width="116dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="0"
+
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p2_col4plus"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p2_blank_space_above_plus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p2_plus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:text="+"
+                android:textSize="30dp"
+                android:paddingHorizontal="0dp"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+
+            <TextView
+                android:id="@+id/com_4p_p2_blank_space_above_plus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p2_plus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementTax"
+                android:paddingHorizontal="0dp"
+                android:text="+"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/com_4p_blank_middle3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue" />
+    <LinearLayout
+        android:id="@+id/com_4p_row1_p3"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/com_4p_p3_name"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blue"
+            android:gravity="center"
+            android:onClick="playerName"
+            android:text="Player 3"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p3_minus_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p3_blank_space_above_minus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p3_minus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:paddingHorizontal="0dp"
+                android:text="-"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+
+            <TextView
+                android:id="@+id/com_4p_p3_blank_space_above_minus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p3_minus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="0dp"
+                android:onClick="incrementDecrementTax"
+                android:text="-"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p3_col3texts"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p3_life_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p3_life_total40"
+                android:layout_width="116dp"
+                android:layout_height="67dp"
+                android:gravity="center"
+                android:text="40"
+
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p3_tax_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p3_tax_start0"
+                android:layout_width="116dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="0"
+
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p3_col4_plus"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p3_blank_space_above_plus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p3_plus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:paddingHorizontal="0dp"
+                android:text="+"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+
+
+            <TextView
+                android:id="@+id/com_4p_p3_blank_space_above_plus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p3_plus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="0dp"
+                android:onClick="incrementDecrementTax"
+                android:text="+"
+                android:textSize="30dp"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/com_4p_blank_middle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightblue" />
+
+    <LinearLayout
+        android:id="@+id/com_4p_row1_p4"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="horizontal"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/com_4p_p4_minus_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p4_blank_space_above_minus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p4_minus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:paddingHorizontal="0dp"
+                android:text="-"
+                android:textSize="30dp"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+
+            <TextView
+                android:id="@+id/com_4p_p4_blank_space_above_minus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p4_minus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="0dp"
+                android:text="-"
+                android:textSize="30dp"
+                android:onClick="incrementDecrementTax"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p4_col3texts"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p4_life_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p4_life_total40"
+                android:layout_width="116dp"
+                android:layout_height="67dp"
+                android:gravity="center"
+                android:text="40"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p4_tax_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/com_4p_p4_tax_start0"
+                android:layout_width="116dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="0"
+
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/com_4p_p4_col4plus"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/com_4p_p4_blank_space_above_plus1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p4_plus_life"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementLife"
+                android:text="+"
+                android:textSize="30dp"
+                android:paddingHorizontal="0dp"
+                android:textColor="@color/lightblue"
+                app:backgroundTint="@color/brown"/>
+
+            <TextView
+                android:id="@+id/com_4p_p4_blank_space_above_plus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/com_4p_btn_p4_plus_tax"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="incrementDecrementTax"
+                android:paddingHorizontal="0dp"
+                android:text="+"
+                android:textColor="@color/lightblue"
+                android:textSize="30dp"
+                app:backgroundTint="@color/brown" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/com_4p_p4_name"
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:onClick="playerName"
+            android:text="Player 4"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

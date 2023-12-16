@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommanderActivity"
+    >
+
+    <TextView
+        android:id="@+id/textViewTitleTopC"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="63dp"
+        android:text="@string/com_header"
+        android:background="@color/lightblue"
+        android:textSize="25sp"
+        android:textColor="@color/brown"
+        android:textStyle="bold"/>
+
+    <FrameLayout
+        android:id="@+id/FrameContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/magiccard">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewChooseC"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:text="@string/choose_players"
+                android:gravity="bottom|center_horizontal"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button2Pcom"
+                android:layout_width="285dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:onClick="goToCom2PlayAct"
+                android:text="2 Players"
+                android:textColor="@color/brown"
+                android:textSize="20sp"
+                app:backgroundTint="@color/lightblue" />
+
+            <Button
+                android:id="@+id/button4Pcom"
+                android:layout_width="285dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:onClick="goToCom4PlayAct"
+                android:text="4 Players"
+                android:textColor="@color/brown"
+                android:textSize="20sp"
+                app:backgroundTint="@color/lightblue" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MagicLife</string>
+    <string name="choose_format">Please choose which format you will be playing today:</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_players">Please choose the number of players in your game</string>
+    <string name="low_life">You\'re getting low on life!</string>
+    <string name="dead">You\'re DEAD!</string>
+    <string name="bkground_image">Sorry, you can\'t change the background image yet.
+    We hope to have that functionality in the near future</string>
+
+    <string name="app_title">Magic Life</string>
+    <string name="standard_header">"Magic Life Standard"</string>
+    <string name="standard">Standard</string>
+
+    <string name="com_header">"Magic Life Commander"</string>
+    <string name="commander">Commander</string>
+
+</resources>
