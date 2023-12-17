@@ -16,7 +16,7 @@
         android:layout_height="63dp"
         android:text="@string/standard_header"
         android:background="@color/lightblue"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textColor="@color/brown"
         android:textStyle="bold"/>
 
@@ -25,8 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/magiccard">
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,14 +41,13 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-
             <Button
                 android:id="@+id/button2Pstd"
                 android:layout_width="285dp"
                 android:layout_height="82dp"
                 android:layout_gravity="center"
                 android:onClick="goToSt2PlayAct"
-                android:text="2 Players"
+                android:text="@string/twoplayers"
                 android:textColor="@color/brown"
                 android:textSize="20sp"
                 app:backgroundTint="@color/lightblue" />
@@ -61,7 +58,7 @@
                 android:layout_height="84dp"
                 android:layout_gravity="center"
                 android:onClick="goToSt4PlayAct"
-                android:text="4 Players"
+                android:text="@string/fourplayers"
                 android:textColor="@color/brown"
                 android:textSize="20sp"
                 app:backgroundTint="@color/lightblue" />

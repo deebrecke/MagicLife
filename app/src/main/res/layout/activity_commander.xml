@@ -26,9 +26,6 @@
         android:layout_height="match_parent"
         android:background="@drawable/magiccard">
 
-
-
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +47,7 @@
                 android:layout_height="82dp"
                 android:layout_gravity="center"
                 android:onClick="goToCom2PlayAct"
-                android:text="2 Players"
+                android:text="@string/twoplayers"
                 android:textColor="@color/brown"
                 android:textSize="20sp"
                 app:backgroundTint="@color/lightblue" />
@@ -61,14 +58,12 @@
                 android:layout_height="84dp"
                 android:layout_gravity="center"
                 android:onClick="goToCom4PlayAct"
-                android:text="4 Players"
+                android:text="@string/fourplayers"
                 android:textColor="@color/brown"
                 android:textSize="20sp"
                 app:backgroundTint="@color/lightblue" />
 
-
         </LinearLayout>
-
 
     </FrameLayout>
 </LinearLayout>
