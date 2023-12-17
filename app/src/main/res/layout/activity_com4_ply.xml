@@ -36,9 +36,9 @@
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
                 android:paddingHorizontal="0dp"
-                android:text="-"
+                android:text="@string/minus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
 
             <TextView
@@ -53,9 +53,9 @@
                 android:background="@null"
                 android:paddingHorizontal="0dp"
                 android:onClick="incrementDecrementTax"
-                android:text="-"
+                android:text="@string/minus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
 
         </LinearLayout>
@@ -72,9 +72,9 @@
                 android:id="@+id/com_4p_p1_life_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Life"
+                android:text="@string/life"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -82,7 +82,7 @@
                 android:layout_width="116dp"
                 android:layout_height="67dp"
                 android:gravity="center"
-                android:text="40"
+                android:text="@string/forty"
 
                 android:textAlignment="center"
                 android:textSize="34sp"
@@ -92,7 +92,7 @@
                 android:id="@+id/com_4p_p1_tax_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tax"
+                android:text="@string/tax"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -102,7 +102,7 @@
                 android:layout_width="116dp"
                 android:layout_height="60dp"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/zero"
 
                 android:textAlignment="center"
                 android:textSize="34sp"
@@ -128,9 +128,9 @@
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
                 android:paddingHorizontal="0dp"
-                android:text="+"
+                android:text="@string/plus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
 
 
@@ -146,8 +146,8 @@
                 android:background="@null"
                 android:paddingHorizontal="0dp"
                 android:onClick="incrementDecrementTax"
-                android:text="+"
-                android:textSize="30dp"
+                android:text="@string/plus"
+                android:textSize="30sp"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
         </LinearLayout>
@@ -160,7 +160,7 @@
             android:background="@drawable/red"
             android:gravity="center"
             android:onClick="playerName"
-            android:text="Player 1"
+            android:text="@string/p1"
             android:textColor="@color/white"/>
 
     </LinearLayout>
@@ -187,7 +187,7 @@
             android:background="@drawable/green"
             android:gravity="center"
             android:onClick="playerName"
-            android:text="Player 2"
+            android:text="@string/p2"
             android:textColor="@color/white"/>
 
         <LinearLayout
@@ -209,8 +209,8 @@
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
                 android:paddingHorizontal="0dp"
-                android:text="-"
-                android:textSize="30dp"
+                android:text="@string/minus"
+                android:textSize="30sp"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
 
@@ -225,8 +225,8 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:paddingHorizontal="0dp"
-                android:text="-"
-                android:textSize="30dp"
+                android:text="@string/minus"
+                android:textSize="30sp"
                 android:onClick="incrementDecrementTax"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
@@ -243,9 +243,9 @@
                 android:id="@+id/com_4p_p2_life_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Life"
+                android:text="@string/life"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -253,7 +253,7 @@
                 android:layout_width="116dp"
                 android:layout_height="67dp"
                 android:gravity="center"
-                android:text="40"
+                android:text="@string/forty"
                 android:textAlignment="center"
                 android:textSize="34sp"
                 android:textStyle="bold" />
@@ -262,7 +262,7 @@
                 android:id="@+id/com_4p_p2_tax_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tax"
+                android:text="@string/tax"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -272,7 +272,7 @@
                 android:layout_width="116dp"
                 android:layout_height="60dp"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/zero"
 
                 android:textAlignment="center"
                 android:textSize="34sp"
@@ -297,8 +297,8 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
-                android:text="+"
-                android:textSize="30dp"
+                android:text="@string/plus"
+                android:textSize="30sp"
                 android:paddingHorizontal="0dp"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
@@ -315,9 +315,9 @@
                 android:background="@null"
                 android:onClick="incrementDecrementTax"
                 android:paddingHorizontal="0dp"
-                android:text="+"
+                android:text="@string/plus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
         </LinearLayout>
 
@@ -340,7 +340,7 @@
             android:background="@drawable/blue"
             android:gravity="center"
             android:onClick="playerName"
-            android:text="Player 3"
+            android:text="@string/p3"
             android:textColor="@color/white"/>
 
         <LinearLayout
@@ -362,9 +362,9 @@
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
                 android:paddingHorizontal="0dp"
-                android:text="-"
+                android:text="@string/minus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
 
             <TextView
@@ -379,9 +379,9 @@
                 android:background="@null"
                 android:paddingHorizontal="0dp"
                 android:onClick="incrementDecrementTax"
-                android:text="-"
+                android:text="@string/minus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
 
         </LinearLayout>
@@ -397,9 +397,9 @@
                 android:id="@+id/com_4p_p3_life_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Life"
+                android:text="@string/life"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -407,7 +407,7 @@
                 android:layout_width="116dp"
                 android:layout_height="67dp"
                 android:gravity="center"
-                android:text="40"
+                android:text="@string/forty"
 
                 android:textAlignment="center"
                 android:textSize="34sp"
@@ -417,7 +417,7 @@
                 android:id="@+id/com_4p_p3_tax_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tax"
+                android:text="@string/tax"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -427,7 +427,7 @@
                 android:layout_width="116dp"
                 android:layout_height="60dp"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/zero"
 
                 android:textAlignment="center"
                 android:textSize="34sp"
@@ -453,9 +453,9 @@
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
                 android:paddingHorizontal="0dp"
-                android:text="+"
+                android:text="@string/plus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
 
 
@@ -471,8 +471,8 @@
                 android:background="@null"
                 android:paddingHorizontal="0dp"
                 android:onClick="incrementDecrementTax"
-                android:text="+"
-                android:textSize="30dp"
+                android:text="@string/plus"
+                android:textSize="30sp"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
         </LinearLayout>
@@ -514,8 +514,8 @@
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
                 android:paddingHorizontal="0dp"
-                android:text="-"
-                android:textSize="30dp"
+                android:text="@string/minus"
+                android:textSize="30sp"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
 
@@ -530,8 +530,8 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:paddingHorizontal="0dp"
-                android:text="-"
-                android:textSize="30dp"
+                android:text="@string/minus"
+                android:textSize="30sp"
                 android:onClick="incrementDecrementTax"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
@@ -548,9 +548,9 @@
                 android:id="@+id/com_4p_p4_life_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Life"
+                android:text="@string/life"
                 android:textAlignment="center"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -558,7 +558,7 @@
                 android:layout_width="116dp"
                 android:layout_height="67dp"
                 android:gravity="center"
-                android:text="40"
+                android:text="@string/forty"
                 android:textAlignment="center"
                 android:textSize="34sp"
                 android:textStyle="bold" />
@@ -567,7 +567,7 @@
                 android:id="@+id/com_4p_p4_tax_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tax"
+                android:text="@string/tax"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -577,7 +577,7 @@
                 android:layout_width="116dp"
                 android:layout_height="60dp"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/zero"
 
                 android:textAlignment="center"
                 android:textSize="34sp"
@@ -602,8 +602,8 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:onClick="incrementDecrementLife"
-                android:text="+"
-                android:textSize="30dp"
+                android:text="@string/plus"
+                android:textSize="30sp"
                 android:paddingHorizontal="0dp"
                 android:textColor="@color/lightblue"
                 app:backgroundTint="@color/brown"/>
@@ -620,9 +620,9 @@
                 android:background="@null"
                 android:onClick="incrementDecrementTax"
                 android:paddingHorizontal="0dp"
-                android:text="+"
+                android:text="@string/plus"
                 android:textColor="@color/lightblue"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:backgroundTint="@color/brown" />
         </LinearLayout>
         <TextView
@@ -633,7 +633,7 @@
             android:background="@drawable/black"
             android:gravity="center"
             android:onClick="playerName"
-            android:text="Player 4"
+            android:text="@string/p4"
             android:textColor="@color/white"/>
 
     </LinearLayout>

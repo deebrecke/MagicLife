@@ -2,7 +2,6 @@
     <string name="app_name">MagicLife</string>
     <string name="choose_format">Please choose which format you will be playing today:</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="choose_players">Please choose the number of players in your game</string>
     <string name="low_life">You\'re getting low on life!</string>
     <string name="dead">You\'re DEAD!</string>
@@ -15,5 +14,21 @@
 
     <string name="com_header">"Magic Life Commander"</string>
     <string name="commander">Commander</string>
+
+    <string name="p1">Player 1</string>
+    <string name="p2">Player 2</string>
+    <string name="p3">Player 3</string>
+    <string name="p4">Player 4</string>
+
+    <string name="life">Life</string>
+    <string name="tax">Tax</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    <string name="forty">40</string>
+    <string name="twenty">20</string>
+    <string name="zero">0</string>
+
 
 </resources>
